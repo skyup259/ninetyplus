@@ -6,6 +6,7 @@
 */
 {
   "files": [],
+  "types": ["jquery"],
   "references": [
     {
       "path": "./tsconfig.app.json"
@@ -16,5 +17,8 @@
     {
       "path": "./e2e/tsconfig.json"
     }
-]
+],
+"paths": {
+  "assests/*": [ "assests/*" ]    // src/assests
+}
 }
