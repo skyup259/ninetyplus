@@ -1,0 +1,80 @@
+<div id="Notice" class="row mx-5 mt-1 align-center meeting-list rounded max-height">
+  <div class="card-header">
+    Recent Announcements
+  </div>
+  <div class="col-12" *ngFor="let meeting of meetingData">
+    <div class="row border-bottom mx-3 mt-2">
+      <div class="card col-md-8 border-bottom border-0">
+        <div class="card-body">
+          <h5 class="card-title">{{meeting.topic}} reasdfsd</h5>
+          <p class="card-text">{{meeting.description}}</p>
+          <p> {{meeting.date}} {{meeting.time}}</p>
+          <p> Organiser: {{meeting.organiser}}</p>
+          <a [href]="meeting.link">link to connect</a>
+        </div>
+      </div>
+
+      <div class="card col-md-4 border-0">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img class="profile-pic" [src]="meeting.picPath" />
+          </h5>
+          <p class="card-text">{{meeting.takenBy}}</p>
+          <p>{{meeting.profession}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="show-more">
+    <a href="#" *ngIf="meetingDatas.length > meetingData.length" (click)="showCompleteMeetinglist()">Show More</a>
+  </div>
+</div>
+
+<div class="notice-board mt-1 max-height max-height-mobile">
+  <div class="border border-dark notice-max-height rounded">
+    <div class="card-header">
+      In Focus
+    </div>
+    <div class="col-12" *ngFor="let meeting of meetingDatas">
+      <div class="card-body">
+        <h6 class="card-title">
+          <a href="#">{{meeting.topic}}</a>
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="border border-dark routine-max-height rounded mt-3">
+    <div class="mt-1 rounded notice-max-height">
+      <div class="card-header">
+        Routine
+      </div>
+      <div class="col-12 px-0">
+          <ul class="nav nav-tabs">
+            <li class="nav-item" *ngFor="let class of classList">
+              <a class="nav-link class-list" (click)="routine(class)">Class{{class}}</a>
+            </li>
+          </ul>
+
+        <div class="sub" *ngIf="screenWidth> 750">
+          <div class="routine">
+            <p *ngFor="let routine of routineData; let i=index">
+              <span *ngIf="i%2 === 1"><b>{{routine.day}}</b>: {{routine.sub}}</span>
+            </p>
+          </div>
+          <div class="routine">
+            <p *ngFor="let routine of routineData; let i=index">
+              <span *ngIf="i%2 === 0"><b>{{routine.day}}</b>: {{routine.sub}}</span>
+            </p>
+          </div>
+        </div>
+        <div class="sub" *ngIf="screenWidth <750">
+          <div class="routine">
+            <p *ngFor="let routine of routineData; let i=index">
+              <span ><b>{{routine.day}}</b>: {{routine.sub}}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

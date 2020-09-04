@@ -1,0 +1,49 @@
+<div id="Alumni" class="rounded">
+  <div class="row px-5 mt-4 rounded">
+    <div class="col-12 ruler rounded"></div>
+  </div>
+  <div class="row">
+    <div class="col-12 px-5">
+      <h3>Alumni's</h3>
+    </div>
+  </div>
+  <div class="row px-5 mt-1 align-center">
+    <div class="col-sm-12 col-md pl-2 p-bottom-40">
+      <div id="accordion">
+        <div class="card" *ngFor="let batchYear of batches">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#batch'+batchYear" aria-expanded="false"
+                aria-controls="collapseOne">
+                Batch: {{batchYear}}
+              </button>
+            </h5>
+          </div>
+
+          <div id="batch{{batchYear}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="row max-height">
+              <div class="card-body col-sm-12 col-md-4" *ngFor="let data of getBatchData(batchYear)">
+                <div class="row rounded border ml-2 mr-2 p-1">
+                  <div class="col-3">
+                    <img class="rounded-circle profie-pic pr-2" [src]="data.path" alt="Card image cap">
+                  </div>
+                  <div class="col-9 student-data">
+                    <h5 class="card-title">{{data.name}}</h5>
+                    <p class="card-text">{{data.title}}</p>
+                    <p class="card-text" *ngIf="data.link">
+                      <a [href]="data.link">Click to Know More</a>
+                    </p>
+                    <p class="card-text" *ngIf="!data.link">
+                      <span *ngIf="data.other">{{data.other}}</span>
+                      <span *ngIf="data.location">, </span>
+                      <span *ngIf="data.location">{{data.location}}</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

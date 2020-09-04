@@ -1,0 +1,21 @@
+<div id="Teacher" class="rounded max-height">
+  <div class="row px-5 mt-4 rounded">
+    <div class="col-12 ruler rounded"></div>
+  </div>
+  <div class="row">
+    <div class="col-12 px-5">
+      <h3>Teacher's</h3>
+    </div>
+  </div>
+  <div class="row px-5 mt-1 align-center">
+    <div class="col-sm-12 col-md-3 pl-2  p-bottom-40" *ngFor="let data of data">
+      <div class="card">
+        <img class="card-img-top rounded-circle profie-pic pt-2" [src]="data.path" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{data.name}}</h5>
+          <p class="card-text">{{data.title}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

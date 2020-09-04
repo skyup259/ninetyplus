@@ -1,0 +1,194 @@
+.profile-pic {
+  height: 50px;
+  width: 50px;
+}
+
+.card-text {
+  margin-bottom: 0;
+}
+
+.card-title {
+  margin-bottom: .25rem;
+}
+
+.card-body {
+  padding: .25rem;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.max-height {
+  max-height: 361px;
+  overflow-y: auto;
+}
+
+.notice-max-height {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.routine-max-height {
+  max-height: 175px;
+  overflow-y: auto;
+}
+
+.meeting-list {
+  min-width: 60%;
+  border: solid 1px;
+  display: inline-block;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
+
+.show-more {
+  margin-left: 3rem;
+}
+
+.notice-board {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (max-width: 330px) {
+  .notice-board {
+    width: 80%;
+    margin-left: 16%;
+    margin-bottom: 8px;
+  }
+
+  .class-list {
+    padding: 0.5rem .1rem !important;
+  }
+
+  .max-height-mobile {
+    max-height: 500px;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 380px) {
+  .notice-board {
+    width: 85%;
+    margin-left: 14%;
+    margin-bottom: 8px;
+  }
+
+  .meeting-list {
+    width: 82%;
+  }
+
+  .class-list {
+    padding: 0.5rem .25rem !important;
+  }
+
+  .max-height-mobile {
+    max-height: 500px;
+  }
+
+  .routine-max-height {
+    max-height: 260px;
+  }
+
+  .notice-max-height {
+    max-height: 230px
+  }
+}
+
+
+@media (min-width: 380px) and (max-width: 450px) {
+  .notice-board {
+    width: 85%;
+    margin-left: 12%;
+    margin-bottom: 8px;
+  }
+
+  .class-list {
+    padding: 0.5rem !important;
+  }
+
+  .max-height-mobile {
+    max-height: 500px;
+  }
+
+  .meeting-list {
+    width: 85%;
+  }
+
+  .routine-max-height {
+    max-height: 260px;
+  }
+
+  .notice-max-height {
+    max-height: 230px
+  }
+}
+
+
+::ng-deep .carousel-indicators li {
+  background-color: #5d4f4f;
+}
+
+::ng-deep .carousel-control-prev-icon {
+  background-color: #5d4f4f;
+}
+
+::ng-deep .carousel-control-next-icon {
+  background-color: #5d4f4f;
+}
+
+.routine p {
+  font-size: 15px;
+  margin-left: 12px;
+}
+
+@media (min-width: 780px)  and (max-width: 1050px ) {
+  .sub div { width: 48%; }
+.sub div:nth-child(1) { float:left; }
+.sub div:nth-child(2) { float:right;}
+
+.meeting-list {
+  width: 56%;
+  }
+
+  .notice-board {
+    width: 29% !important;
+  }
+
+  .class-list {
+    padding: .5rem .3rem;
+  }
+
+  .routine p {
+    font-size: 13px;
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .sub div { width: 48%; }
+.sub div:nth-child(1) { float:left; }
+.sub div:nth-child(2) { float:right;}
+  .routine p {
+    font-size: 15px;
+    margin-left: 8px;
+  }
+
+  .meeting-list {
+    width: 56%;
+    }
+
+    .notice-board {
+      width: 29% !important;
+    }
+
+    .class-list {
+      padding: .5rem .7rem;
+    }
+}

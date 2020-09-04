@@ -1,0 +1,93 @@
+<div id="Student" class="rounded">
+  <div class="row px-5 mt-4 rounded">
+    <div class="col-12 ruler rounded"></div>
+  </div>
+  <div class="row">
+    <div class="col-12 px-5">
+      <h3>Student's</h3>
+    </div>
+  </div>
+  <div class="row px-5 mt-1 align-center">
+    <div class="col-sm-12 col-md pl-2 p-bottom-40">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#class10" aria-expanded="false"
+                aria-controls="collapseThree">
+                Class 10
+              </button>
+            </h5>
+          </div>
+          <div id="class10" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="row max-height">
+              <div class="card-body col-sm-12 col-md-4" *ngFor="let data of class10">
+                <div class="row rounded border ml-2 mr-2 p-1">
+                  <div class="col-3">
+                    <img class="rounded-circle profie-pic pr-2" [src]="data.path" alt="Card image cap">
+                  </div>
+                  <div class="col-9 student-data">
+                    <h5 class="card-title">{{data.name}}</h5>
+                    <p class="card-text" hidden=true>{{data.school}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#class9" aria-expanded="false"
+                aria-controls="collapseTwo">
+                Class 9
+              </button>
+            </h5>
+          </div>
+          <div id="class9" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="row max-height">
+              <div class="card-body col-sm-12 col-md-4" *ngFor="let data of class9">
+                <div class="row rounded border ml-2 mr-2 p-1">
+                  <div class="col-3">
+                    <img class="rounded-circle profie-pic pr-2" [src]="data.path" alt="Card image cap">
+                  </div>
+                  <div class="col-9 student-data">
+                    <h5 class="card-title">{{data.name}}</h5>
+                    <p class="card-text">{{data.school}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#class8" aria-expanded="false"
+                aria-controls="collapseOne">
+                Class 8
+              </button>
+            </h5>
+          </div>
+
+          <div id="class8" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="row max-height">
+              <div class="card-body col-sm-12 col-md-4" *ngFor="let data of class8">
+                <div class="row rounded border ml-2 mr-2 p-1">
+                  <div class="col-3">
+                    <img class="rounded-circle profie-pic pr-2" [src]="data.path" alt="Card image cap">
+                  </div>
+                  <div class="col-9 student-data">
+                    <h5 class="card-title">{{data.name}}</h5>
+                    <p class="card-text">{{data.school}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

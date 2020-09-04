@@ -1,0 +1,84 @@
+img {
+  width: 68px;
+  height: 68px;
+}
+
+.max-height {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.student-data {
+  padding-left: 20px;
+  padding-right: 0px;
+}
+
+.card-body {
+  padding: .8rem;
+}
+
+.card-title {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 350px) {
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .p-1 {
+    padding: 0rem;
+  }
+
+  .col-3{
+    padding-left: 0px;
+    padding-right: 5px;
+  }
+
+  .col-9 {
+    padding-left: 8px;
+    padding-right: 0px;
+  }
+
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .card-body {
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+
+@media (min-width: 350px) and  (max-width: 450px) {
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .p-1 {
+    padding: 0rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .card-body {
+    padding: .35rem 1rem;
+  }
+}
+
+.ruler {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1rem solid rgba(0, 0, 0, 0.1);
+}

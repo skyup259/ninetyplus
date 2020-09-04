@@ -1,0 +1,26 @@
+<div class="rounded slide-image mt-2 mb-2">
+<ngb-carousel
+[showNavigationArrows]="true"
+  [showNavigationIndicators]="true"
+  interval="4000">
+  <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+          <img src="assets/sli1.jpg" alt="Random first slide">
+      </div>
+      <div hidden=true class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/sli2.jpg" alt="Random first slide">
+  </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img src="assets/sli3.jpg" alt="Random first slide">
+  </div>
+  </ng-template>
+</ngb-carousel>
+</div>
