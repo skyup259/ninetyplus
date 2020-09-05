@@ -10,6 +10,7 @@ import { AlumniComponent } from './component/alumni/alumni.component';
 import { NoticeComponent } from './component/notice/notice.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { SlidecardComponent } from './component/slidecard/slidecard.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SlidecardComponent } from './component/slidecard/slidecard.component';
     AlumniComponent,
     NoticeComponent,
     NavbarComponent,
-    SlidecardComponent
+    SlidecardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

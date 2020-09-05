@@ -6,11 +6,11 @@
     <div class="row border-bottom mx-3 mt-2">
       <div class="card col-md-8 border-bottom border-0">
         <div class="card-body">
-          <h5 class="card-title">{{meeting.topic}} reasdfsd</h5>
+          <h5 class="card-title">{{meeting.topic}}</h5>
           <p class="card-text">{{meeting.description}}</p>
-          <p> {{meeting.date}} {{meeting.time}}</p>
+          <p> <b>{{meeting.date}} {{meeting.time}}</b></p>
           <p> Organiser: {{meeting.organiser}}</p>
-          <a [href]="meeting.link">link to connect</a>
+          <a [href]="meeting.link">click to connect</a>
         </div>
       </div>
 
@@ -35,10 +35,10 @@
     <div class="card-header">
       In Focus
     </div>
-    <div class="col-12" *ngFor="let meeting of meetingDatas">
+    <div class="col-12" *ngFor="let meeting of mettingTopic">
       <div class="card-body">
         <h6 class="card-title">
-          <a href="#">{{meeting.topic}}</a>
+          <a href="#!">{{meeting.topic}}</a>
         </h6>
       </div>
     </div>
@@ -58,12 +58,12 @@
         <div class="sub" *ngIf="screenWidth> 750">
           <div class="routine">
             <p *ngFor="let routine of routineData; let i=index">
-              <span *ngIf="i%2 === 1"><b>{{routine.day}}</b>: {{routine.sub}}</span>
+              <span *ngIf="i%2 === 0"><b>{{routine.day}}</b>: {{routine.sub}}</span>
             </p>
           </div>
           <div class="routine">
             <p *ngFor="let routine of routineData; let i=index">
-              <span *ngIf="i%2 === 0"><b>{{routine.day}}</b>: {{routine.sub}}</span>
+              <span *ngIf="i%2 === 1"><b>{{routine.day}}</b>: {{routine.sub}}</span>
             </p>
           </div>
         </div>

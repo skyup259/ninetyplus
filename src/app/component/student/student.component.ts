@@ -10,32 +10,32 @@ export class StudentComponent implements OnInit {
     {
       name: 'Varsha',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Shaily',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Prisha',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Amisha',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Khushi',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Milhaan',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     }
   ];
 
@@ -43,102 +43,102 @@ export class StudentComponent implements OnInit {
     {
       name: 'Suhami',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Somya',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Abay',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Talha',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Abhishek',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Manish',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Ankur',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Aaditya',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Pawan',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Sakshi',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Niskita',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Simpy',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Aakansha',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Bhavya',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Priya',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Aayushi',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Ragini',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Supriya',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Mushkan',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Sushant',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     }
   ];
 
@@ -146,117 +146,117 @@ export class StudentComponent implements OnInit {
     {
       name: 'Sarthali',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Riya',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Dheeraj ',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Sneha Singh',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Sneha Gupta',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Talat',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Harshita',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Geetika ',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Priyanshu ',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Sigyasa ',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Ritika',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Rohini',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Ankita',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Hema',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Kajal',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Khushboo',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Komal',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Meenakshi ',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Pallavi',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Priyanka ',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Shalu',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Somya',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     },
     {
       name: 'Himani',
       path: 'assets/profile.png',
-      school: 'maths, science'
+      school: ''
     }
   ];
 

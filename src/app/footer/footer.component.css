@@ -1,0 +1,36 @@
+.card-body p {
+  margin-bottom: 2px;
+}
+
+.card-body, .card {
+  border: none;;
+}
+
+.card-header {
+  background-color: white;
+}
+
+.ruler {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  margin-bottom: .3rem;
+}
+
+@media (min-width: 1020px) {
+  .contact1 {
+    width: 45%;
+    float: left;
+  }
+  .contact2 {
+    max-width: 45%;
+    padding-bottom: 5px;
+  }
+  .technical {
+    margin-left: 25%;
+  }
+}

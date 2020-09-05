@@ -23,7 +23,7 @@ export class TeacherComponent implements OnInit {
     },
     {
       name: 'Mr. Sunny Kumar',
-      path: 'assets/profile.png',
+      path: 'assets/teacher/sunny.jpg',
       title: 'Biology',
       subtitle: 'other information',
       number: '987654321'

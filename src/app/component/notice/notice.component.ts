@@ -10,53 +10,14 @@ export class NoticeComponent implements OnInit {
 
   meetingDatas = [
     {
-      topic: 'Today is something new',
+      topic: 'Path of Engineering',
       time: '10:00 am IST',
       date: '5 Sep 2020',
-      description: 'HTMl, CSS',
-      link: 'https://meet.google.com/wif-pnjg-wxv',
+      description: 'Engineering journey and Ninety Plus website',
+      link: 'https://meet.google.com/swg-xpma-nzt',
       organiser: 'Chandan Singh',
       organiserNumber: '',
-      takenBy: 'Saurabh Sunny',
-      picPath: 'assets/profile.png',
-      profession: 'Software Developer',
-      number: '987654321'
-    },
-    {
-      topic: 'Basic of web development',
-      time: '10:00 am IST',
-      date: '5 Sep 2020',
-      description: 'HTMl, CSS',
-      link: '',
-      organiser: 'Chandan Singh',
-      organiserNumber: '',
-      takenBy: 'Saurabh Sunny',
-      picPath: 'assets/profile.png',
-      profession: 'Software Developer',
-      number: '987654321'
-    },
-    {
-      topic: 'Basic of web development',
-      time: '10:00 am IST',
-      date: '5 Sep 2020',
-      description: 'HTMl, CSS',
-      link: '',
-      organiser: 'Chandan Singh',
-      organiserNumber: '',
-      takenBy: 'Saurabh Sunny',
-      picPath: 'assets/profile.png',
-      profession: 'Software Developer',
-      number: '987654321'
-    },
-    {
-      topic: 'Basic of web development',
-      time: '10:00 am IST',
-      date: '5 Sep 2020',
-      description: 'HTMl, CSS',
-      link: '',
-      organiser: 'Chandan Singh',
-      organiserNumber: '',
-      takenBy: 'Saurabh Sunny',
+      takenBy: 'Saurabh, Kushagra',
       picPath: 'assets/profile.png',
       profession: 'Software Developer',
       number: '987654321'
@@ -168,6 +129,18 @@ export class NoticeComponent implements OnInit {
     {
       day: 'Sat',
       sub: ''
+    }
+  ];
+
+  mettingTopic = [
+    {
+      topic: 'Published 90+ website'
+    },
+    {
+      topic: 'https://skyup259.github.io/90Plus/'
+    },
+    {
+      topic: 'Started Alumni-Student meet every sunday'
     }
   ];
 

@@ -10,19 +10,30 @@
   <div class="row px-5 mt-1 align-center">
     <div class="col-sm-12 col-md pl-2 p-bottom-40">
       <div id="accordion">
-        <div class="card" *ngFor="let batchYear of batches">
+
+        <div class="dropdown show mb-2">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Alumni type
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#!" (click)="alumniType('active')">Active</a>
+            <a class="dropdown-item" href="#!" (click)="alumniType('all')">Batch-wise</a>
+          </div>
+        </div>
+
+        <div class="card" *ngIf="isActiveAlumni">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#batch'+batchYear" aria-expanded="false"
+              <button class="btn btn-link" data-toggle="collapse" data-target="#active" aria-expanded="true"
                 aria-controls="collapseOne">
-                Batch: {{batchYear}}
+                Active
               </button>
             </h5>
           </div>
-
-          <div id="batch{{batchYear}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <!-- active alumni start-->
+          <div id="active" class="show" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="row max-height">
-              <div class="card-body col-sm-12 col-md-4" *ngFor="let data of getBatchData(batchYear)">
+              <div class="card-body col-sm-12 col-md-4" *ngFor="let data of activeAlumni">
                 <div class="row rounded border ml-2 mr-2 p-1">
                   <div class="col-3">
                     <img class="rounded-circle profie-pic pr-2" [src]="data.path" alt="Card image cap">
@@ -43,6 +54,45 @@
             </div>
           </div>
         </div>
+        <!-- active alumni end-->
+        <!-- all alumni start-->
+        <div *ngIf="!isActiveAlumni">
+        <div class="card" *ngFor="let batchYear of batches">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#batch'+batchYear" aria-expanded="false"
+                aria-controls="collapseOne">
+                Batch: {{batchYear}}
+              </button>
+            </h5>
+          </div>
+
+          <div id="batch{{batchYear}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="row max-height">
+              <div class="card-body col-sm-12 col-md-4" *ngFor="let data of getBatchData(batchYear)">
+                <div class="row rounded border ml-2 mr-2 p-1">
+                  <div class="col-3">
+                    <img class="rounded-circle profie-pic pr-2" [src]="data.path" alt="Card image cap">
+                  </div>
+                  <div class="col-9 student-data">
+                    <h5 class="card-title" style="filter: blur(3.5px);">{{data.name}}</h5>
+                    <p class="card-text">{{data.title}}</p>
+                    <p class="card-text" *ngIf="data.link">
+                      <a [href]="data.link">Click to Know More</a>
+                    </p>
+                    <p class="card-text" *ngIf="!data.link">
+                      <span *ngIf="data.other">{{data.other}}</span>
+                      <span *ngIf="data.location">, </span>
+                      <span *ngIf="data.location">{{data.location}}</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- all alumni end-->
+
       </div>
     </div>
   </div>

@@ -295,10 +295,43 @@ export class AlumniComponent implements OnInit {
     }
   ];
 
+  activeAlumni = [
+    {
+      name: 'Saurabh K. Sunny',
+      path: 'assets/alumni/saurabh.jpg',
+      title: 'Software Engineer',
+      other: 'Aperture',
+      number: '987654321',
+      location: 'Hyderabad',
+      link: 'https://skyup259.github.io/host_profile/',
+      active: 'true'
+    },
+    {
+      name: 'Nishant Kumar',
+      path: 'assets/profile.png',
+      title: 'MBBS',
+      other: 'Patna Medical College',
+      number: '987654321',
+      location: ''
+    },
+    {
+      name: 'Kushagra Gupta',
+      path: 'assets/profile.png',
+      title: 'Ass. software engineer',
+      other: 'Mphasis',
+      location: 'Bangalore',
+      number: '987654321',
+      active: 'false'
+    }
+  ];
+
+  isActiveAlumni = true;
+
   batches = [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018];
   constructor() { }
 
   ngOnInit(): void {
+    this.isActiveAlumni = true;
   }
 
   getBatchData(batchYear): any[] {
@@ -339,6 +372,14 @@ export class AlumniComponent implements OnInit {
 
     if (batchYear === 2018) {
       return this.batch2018;
+    }
+  }
+
+  alumniType(alumniType): void {
+    if (alumniType === 'all') {
+      this.isActiveAlumni = false;
+    } else if (alumniType === 'active') {
+      this.isActiveAlumni = true;
     }
   }
 
